@@ -1,70 +1,109 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Idioma principal de la página: español -->
 <head>
-  <meta charset="UTF-8">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <title>Inicio</title> <!-- Título que se muestra en la pestaña del navegador -->
+  <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace a los estilos CSS -->
 </head>
-<body class="fondo-pagina" >
-  <table style="margin-left: 5cm;">
+
+<body class="fondo-pagina"> <!-- Clase CSS para el fondo personalizado -->
+
+  <!-- Contenedor principal de la página con una tabla (NO recomendado para maquetación moderna) -->
+  <table style="margin-left: 5cm;"> <!-- Aplica margen izquierdo a la tabla -->
+
+    <!-- Encabezado de la página -->
     <tr>
       <td colspan="4"><h1>Inicio de sesión</h1></td>
+    </tr>
+
+    <!-- Fila del formulario de usuario -->
     <tr>
       <td colspan="4">
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Usuario</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-      </form>
+        <!-- Formulario de ingreso de usuario (correo electrónico) -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Usuario</label> <!-- Etiqueta del campo -->
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- Campo de entrada tipo email -->
+          </div>
+        </form>
       </td>
     </tr>
+
+    <!-- Espacio vertical -->
     <tr style="height: 15px;">
-      <td colspan="4"> </td>
+      <td colspan="4"></td>
     </tr>
+
+    <!-- Fila del formulario de contraseña -->
     <tr>
       <td colspan="4">
-      <form>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-      </form>
+        <!-- Formulario para ingresar la contraseña -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label> <!-- Etiqueta del campo -->
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <!-- Campo de entrada tipo contraseña -->
+          </div>
+        </form>
       </td>
+    </tr>
+
+    <!-- Espacio vertical -->
     <tr style="height: 15px;">
-      <td colspan="4"> </td>
+      <td colspan="4"></td>
     </tr>
+
+    <!-- Fila del botón de envío -->
     <tr>
       <td colspan="4">
-        <a href="Crud.html"><button type="submit" class="btn btn-primary">Ingresar</button></a>
+        <!-- Botón que redirige a Crud.html (¡Nota! Esto no valida los datos) -->
+        <a href="Crud.html">
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+        </a>
       </td>
     </tr>
-        <tr style="height: 50px;">
-      <td colspan="4"> </td>
-    </tr>
-    <tr>
-      <td><a href="index.html" class="inicio">Inicio |</a> 
-       <a href="QuienesSomos.html" class= "inicio" >¿Quiénes somos? |</a>
-       <a href="Servicios.html" class= "inicio" > Servicios | </a>
-       <a href="Contacto.html" class="inicio">Contacto  |</a></td>
-    </tr>
+
+    <!-- Espacio vertical -->
     <tr style="height: 50px;">
-      <td colspan="4"> </td>
+      <td colspan="4"></td>
     </tr>
+
+    <!-- Fila de navegación (menú inferior) -->
     <tr>
       <td>
+        <!-- Enlaces de navegación -->
+        <a href="index.html" class="inicio">Inicio |</a> 
+        <a href="QuienesSomos.html" class="inicio">¿Quiénes somos? |</a>
+        <a href="Servicios.html" class="inicio">Servicios |</a>
+        <a href="Contacto.html" class="inicio">Contacto |</a>
+      </td>
+    </tr>
+
+    <!-- Espacio vertical -->
+    <tr style="height: 50px;">
+      <td colspan="4"></td>
+    </tr>
+
+    <!-- Fila de redes sociales -->
+    <tr>
+      <td>
+        <!-- Enlace a Facebook con ícono -->
         <a href="https://facebook.com" target="_blank">
           <i class="icono-f"></i>
         </a>
+        <!-- Enlace a Twitter/X con ícono -->
         <a href="https://twitter.com" target="_blank">
           <i class="icono-x"></i>
         </a>
+        <!-- Enlace a Instagram con ícono -->
         <a href="https://instagram.com" target="_blank">
           <i class="icono-i"></i>
         </a>
-       </td>
+      </td>
     </tr>
+
   </table>
-  
+
 </body>
 </html>

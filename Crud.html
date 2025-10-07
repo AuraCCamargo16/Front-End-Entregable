@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
+
+  <!-- Título que aparece en la pestaña del navegador -->
   <title>Inicio</title>
+
+  <!-- Enlace a la hoja de estilos personalizada -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body class="fondo-pagina" >
+
+<!-- Cuerpo del documento con clase de fondo personalizada -->
+<body class="fondo-pagina">
+
+  <!-- Tabla usada para organizar el contenido visualmente (❗ No se recomienda usar <table> para maquetar formularios) -->
   <table style="margin-left: 5cm;">
+    
+    <!-- Fila de bienvenida y botón de cerrar sesión -->
     <tr>
       <td colspan="2"><h1>Bienvenido</h1></td>
       <td colspan="2">
+        <!-- Botón para cerrar sesión (redirecciona a index.html) -->
         <a href="index.html"><button type="submit" class="btn btn-primary">Cerrar sesión</button></a>
       </td>
     </tr>
+
+    <!-- Fila para ingresar el título del servicio -->
     <tr>
       <td>
         <div class="form-group">
-          <label for="formGroupExampleInput">Titulo del servicio</label>
+          <label for="formGroupExampleInput">Título del servicio</label>
         </div>
       </td>
       <td>
@@ -25,7 +39,9 @@
         </div>
       </td>
     </tr>
-        <tr>
+
+    <!-- Fila para ingresar la descripción del servicio -->
+    <tr>
       <td>
         <div class="form-group">
           <label for="formGroupExampleInput2">Descripción</label>
@@ -37,6 +53,8 @@
         </div>
       </td>
     </tr>
+
+    <!-- Fila para ingresar el precio -->
     <tr>
       <td>
         <div class="form-group">
@@ -44,10 +62,13 @@
         </div>
       </td>
       <td>
+        <!-- Campo para ingresar el precio -->
         <span class="input-group-text">$</span>
         <input type="text" class="form-control" id="precio" placeholder="0.00">
       </td>
     </tr>
+
+    <!-- Fila para seleccionar la cantidad del producto o servicio -->
     <tr>
       <td>
         <div class="form-group">
@@ -56,19 +77,20 @@
       </td>
       <td>
         <div class="form-group">
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-        </select>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
         </div>
       </td>
     </tr>
-    </tr>
-        <tr>
+
+    <!-- Fila para indicar si el producto está en promoción -->
+    <tr>
       <td>
         <div class="form-group">
           <label for="formGroupExampleInput2">¿Producto en promoción?</label>
@@ -76,46 +98,66 @@
       </td>
       <td>
         <div class="form-group">
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option value="s">S</option>
-          <option value="n">N</option>
-        </select>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option value="s">S</option>
+            <option value="n">N</option>
+          </select>
         </div>
       </td>
     </tr>
+
+    <!-- Espaciado visual -->
     <tr style="height: 20px;">
       <td colspan="4"> </td>
     </tr>
+
+    <!-- Botón para guardar los datos -->
     <tr>
       <td colspan="4">
-        <button type="submit" class="btn btn-primary">Guardar
+        <button type="submit" class="btn btn-primary">Guardar</button>
       </td>
     </tr>
+
+    <!-- Espaciado visual -->
     <tr style="height: 50px;">
       <td colspan="4"> </td>
     </tr>
+
+    <!-- Botones de acción CRUD para servicios -->
     <tr>
-      <td colspan="4"><button type="submit" class="btn btn-primary">Crear servicio</button>
+      <td colspan="4">
+        <button type="submit" class="btn btn-primary">Crear servicio</button>
         <button type="submit" class="btn btn-primary">Consultar servicio</button>
         <button type="submit" class="btn btn-primary">Modificar servicio</button>
-        <button type="submit" class="btn btn-primary">Eliminar servicio</button></td>
+        <button type="submit" class="btn btn-primary">Eliminar servicio</button>
+      </td>
     </tr>
+
+    <!-- Espaciado visual -->
     <tr style="height: 15px;">
       <td colspan="4"> </td>
     </tr>
+
+    <!-- Menú de navegación inferior -->
     <tr>
-      <td><a href="index.html" class="inicio">Inicio |</a> 
-       <a href="QuienesSomos.html" class= "inicio" >¿Quiénes somos? |</a>
-       <a href="Servicios.html" class= "inicio" > Servicios | </a>
-       <a href="Contacto.html" class="inicio">Contacto  |</a></td>
+      <td>
+        <a href="index.html" class="inicio">Inicio |</a> 
+        <a href="QuienesSomos.html" class="inicio">¿Quiénes somos? |</a>
+        <a href="Servicios.html" class="inicio">Servicios |</a>
+        <a href="Contacto.html" class="inicio">Contacto |</a>
+      </td>
     </tr>
+
+    <!-- Espaciado visual -->
     <tr style="height: 50px;">
       <td colspan="4"> </td>
     </tr>
+
+    <!-- Iconos de redes sociales -->
     <tr>
       <td>
         <a href="https://facebook.com" target="_blank">
-          <i class="icono-f"></i>
+          <i class="icono-f"></i> <!-- Ícono personalizado o de librería -->
         </a>
         <a href="https://twitter.com" target="_blank">
           <i class="icono-x"></i>
@@ -123,9 +165,9 @@
         <a href="https://instagram.com" target="_blank">
           <i class="icono-i"></i>
         </a>
-       </td>
+      </td>
     </tr>
   </table>
-  
+
 </body>
 </html>
